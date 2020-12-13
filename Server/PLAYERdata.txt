@@ -1,0 +1,15 @@
+        int data_size = 32 + strlen(my_player.username);
+        char data[data_size];
+        sprintf(&data, "%c%c%s%s%s%X%s%s%s%s",
+                        (unsigned char*) my_player.id,
+                        (unsigned char*) strlen(my_player.username),
+                        my_player.username,
+                        (unsigned char*) my_player.position.x
+                        (unsigned char*) my_player.position.y,
+                        my_player.color,
+                        my_player.size,
+                        my_player.velocity)
+
+
+
+Game_ended,
